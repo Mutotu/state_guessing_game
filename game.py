@@ -1,7 +1,7 @@
 import random
 from state_capitals import states
 
-class Play:
+class Game:
     def __init__(self, name):
         self.name = name
         self.result = {"correct": 0, "incorrect": 0, "answered": 0}
@@ -55,3 +55,10 @@ class Play:
             play_game = input("Play again? press 'y': ").lower()
         print("Finished game for", self.name, "\n", self)
 
+if __name__ == '__main__':
+    print("Can't play in main")
+    #     player_name = input("Enter your name: ")
+    #     game_instance = Game(player_name)
+    #     game_instance.play()
+else:
+    print("game.py(class Game) is being imported")
